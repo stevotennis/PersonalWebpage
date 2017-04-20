@@ -1,0 +1,254 @@
+/**** index page ****/
+.jumbotron {
+	background-image:  url("../img/mount.jpg");
+	background-size: cover;
+}
+
+.jumbotron p {
+	color: white;
+}
+
+.jumbotron a {
+   color: white;
+}
+
+#carousel-example-generic {
+	padding-top: 2em;
+}
+
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+body {
+	/*position: relative;*/
+}
+
+/**** About page ****/
+.image-about {
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 33%;
+}
+
+.intro {
+	position: relative;
+	width: 33%;
+}
+
+.skill {
+	position: relative;
+	width: 33%;
+}
+
+.anchor {
+  /*padding-top: 10em;*/
+}
+
+#about{
+	background-image: url("../img/msh3.png");
+	/*Add a background image*/
+	background-attachment: fixed;
+	/*Give the background a fixed position does it not scroll when you scroll*/
+	background-size: cover;
+	/*Have the background cover the entire div section*/
+	color: white;
+	/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+	padding:100px;
+	padding-top: 50px;
+	height: 850px;
+}
+
+/**** Contact page ****/
+.tmp-body {
+	background-image:  url("../img/mount.jpg");
+	padding-top: 4em;
+	margin: 0;
+}
+
+.container-contact {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto auto auto;
+	background-color: #fffeea;
+	color: #344495;
+}
+
+.header h1 {
+	text-align: center;
+	padding: 1.5em 0 0 0;
+}
+
+
+.header h2 {
+	text-align: center;
+}
+
+.contact-content {
+	width: 600px;  
+  max-width: 90%;
+  margin: auto;
+}
+
+.contact-content p {
+	padding: 0 1.5em;
+	text-align: center;
+	position: relative;
+}
+
+.profiles {
+	padding: 0 1.5em;
+	text-align: center;
+	position: relative;
+}
+
+.email {
+	padding: 0 1.5em;
+	text-align: center;
+	position: relative;
+}
+
+.more {
+	padding-bottom: 0.5em;
+	text-align: center;
+	position: relative;
+}
+
+#contact{
+	background-image: url("../img/upsplash.jpg");
+	/*Add a background image*/
+	background-attachment: fixed;
+	/*Give the background a fixed position does it not scroll when you scroll*/
+	background-size: cover;
+	/*Have the background cover the entire div section*/
+	color: white;
+	/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+	padding:100px;
+	padding-top: 50px;
+	height: 45em;
+}
+
+.glyphicon a:hover{
+	color: red;
+	transition: color 600ms;
+	text-decoration: none;
+}
+
+/**** FAQ page ****/
+.faq {
+	width: 95%;
+	margin: 0 auto 3em auto;
+	color: #344495;
+}
+
+.faq .header h1 {
+	text-align: center;
+	padding: 1em 0 0 0;
+	
+}
+
+.panel-title a:hover{
+	color: blue;
+	transition: color 600ms;
+	text-decoration: none;
+}
+
+/**** Work page ****/
+.row-space {
+	-webkit-column-gap: 1em;
+}
+/* Typography */
+.stevenLiu {
+    text-transform: uppercase;
+}
+
+.stevenLiu a {
+    color: white;
+}
+
+/**** About page ****/
+.intro p {
+  font-family: 'Slabo 27px', serif;
+	font-size: 2em;
+	font-weight: 100;
+	-webkit-margin-before: 0;
+}
+
+.skill h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#skill-list {
+	margin-left: 2em;
+	font-size: 2em;
+}
+
+/**** Contact page ****/
+h1,
+h2,
+h3 {
+	font-family: 'Slabo 27px', serif;
+}
+
+p {
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: 200;
+}
+
+.header h1{
+	font-size: 3em;
+}
+
+.header h2 {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.placedholder>p{
+	font-weight: 200;
+}
+
+.email {
+	text-transform: uppercase;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.more p {
+	font-weight: 900;
+}
+
+/**** FAQ page ****/
+
+/**** Work page ****/
+/* ABOUT */
+.header h1 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.main-text {
+	clear: both;
+	padding-top: 2em;
+	padding: top right bottom left;
+}
+
+.intro {
+	padding: 0 0.75em;
+	box-sizing: border-box;
+}
+
+.skill {
+	padding: 0 0.5em;
+	box-sizing: border-box;
+}
+
+.prof_pic {
+	width: 80%;
+}
+
+h3 p {
+	display: inline-block;
+}

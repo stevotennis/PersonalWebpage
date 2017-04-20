@@ -1,0 +1,126 @@
+body {
+	background-image:  url("../img/mount.jpg");
+	padding-top: 50px;
+	margin: 0;
+}
+
+.container-contact {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto auto auto;
+	background-color: #fffeea;
+	color: #344495;
+}
+
+.header h1 {
+	text-align: center;
+	padding: 40px 0 0 0;
+}
+
+.header h2 {
+	text-align: center;
+}
+
+.contact-content {
+	width: 600px;  
+  max-width: 90%;
+  margin: auto;
+}
+
+.contact-content p {
+	padding: 0 60px;
+	text-align: center;
+	position: relative;
+}
+
+.profiles {
+	padding: 0 60px;
+	text-align: center;
+	position: relative;
+}
+
+.email {
+	padding: 0 60px;
+	text-align: center;
+	position: relative;
+}
+
+.more {
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative;
+}
+
+.nav ul li {
+	display: inline-block;
+}
+
+.nav {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 20px 10px 20px;
+	opacity: 0.75;
+}
+
+.nav ul li a {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 0 5px;
+	text-decoration: none;
+}
+
+.nav ul{
+	float: right;
+	margin: 0 30px 0 0;
+}
+
+.nav img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.nav a:hover {
+	color: #ff0;
+	transition: color 600ms;
+	/*text-decoration: none;*/
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+	font-family: 'Slabo 27px', serif;
+}
+
+p {
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: 200;
+}
+
+.header h1{
+	font-size: 3em;
+}
+
+.header h2 {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.placedholder>p{
+	font-weight: 200;
+}
+
+.email {
+	text-transform: uppercase;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.more p {
+	font-weight: 900;
+}
+
+.nav a {
+	color: white;
+}

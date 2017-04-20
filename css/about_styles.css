@@ -1,0 +1,112 @@
+.container-fluid {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header h1 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.image {
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 30%;
+}
+
+.main-text {
+	clear: both;
+	padding-top: 2em;
+	padding: top right bottom left;
+}
+
+.intro {
+	padding: 0 0.75em;
+	box-sizing: border-box;
+}
+
+.skill {
+	padding: 0 0.5em;
+	box-sizing: border-box;
+}
+
+.corgi {
+	width: 100%;
+}
+
+h3 p {
+	display: inline-block;
+}
+
+body {
+	background-color: #fffeea;
+	color: #344495;
+	padding-top: 4em;
+	margin: 0;
+}
+
+.nav ul li {
+	display: inline-block;
+}
+
+.nav {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 1.5em 0.5em 1.36em;
+	opacity: 0.75;
+	z-index: 1;
+}
+
+.nav ul li a {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 0 0.5em;
+	text-decoration: none;
+}
+
+.nav ul{
+	float: right;
+	margin: 0 0.75em 0 0;
+}
+
+.nav img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.nav a:hover {
+	color: #ff0;
+	transition: color 600ms;
+	/*text-decoration: none;*/
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+	font-family: 'Slabo 27px', serif;
+}
+
+.intro p {
+  font-family: 'Slabo 27px', serif;
+	font-size: 3em;
+	font-weight: 100;
+	-webkit-margin-before: 0;
+}
+
+.skill h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#skill-list {
+	margin-left: 2em;
+	font-size: 2em;
+}
+
+.nav a {
+	color: white;
+}
