@@ -151,6 +151,26 @@ body {
 	text-decoration: none;
 }
 
+.learn-more {
+	text-align: left;
+	float: left;
+}
+
+.modal-button {
+	float: right;
+	padding: 15px;
+}
+
+#faq .header .row {
+	margin-left: 0px;
+}
+
+#modalembed {
+	height: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
 /**** Work page ****/
 #work {
 	padding-top: 50px;
