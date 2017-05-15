@@ -17,6 +17,8 @@
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,6 +27,18 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=943291639025025";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!--navbar starts here-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -130,13 +144,13 @@
 
     </div> <!-- /container -->
 
-    <dir class="container-fluid anchor" id="about">
+    <div class="container-fluid anchor" id="about">
       <div class="header">
         <h1>About Me</h1>
       </div> <!-- /header -->
 
-      <div class="row" id="work">
-        <div class="image-about col-md-3 col-xs-12 col-sm-6 col-lg-3">
+      <div class="row">
+        <div class="image-about col-md-3 col-xs-1 col-sm-6 col-lg-3">
           <img class="prof_pic img-responsive" src="img/fb_prof.jpg" alt="Facebook">
         </div> <!-- /image -->
 
@@ -162,9 +176,9 @@
         <p>I am a UCSD graduate currently working as a Systems Engineer at Cubic Corporation. I did some web development back in college and enjoyed it immensely. But my background in college was Computer Engineering with more focus on hardware and embedded programming. And with those background, I got my current position as a embedded programmer. While I do enjoy busting my head about embedded programming problems, I want to pursue web development because I believe it is a good way to create solutions that anyone with internet access can use.</p><br>
         <p>So, here I am, taking CareFoundry course and learning skills to be an awesome web developer instead. It is my dream to work in a career where my contribution goes right back to the community.</p>
       </div> <!-- /main-text -->
-    </dir> <!-- /container-fluid about -->
+    </div> <!-- /container-fluid about -->
 
-    <dir class="container-fluid" id="work">
+    <div class="container-fluid" id="work">
       <div class="header">
         <h1>Work</h1>
       </div>
@@ -178,32 +192,32 @@
         <div class="col-md-3 col-xs-12 col-sm-6 col-lg-3"><img src="img/corgi_car.jpg" class="img-responsive"></div>
         <div class="col-md-3 col-xs-12 col-sm-6 col-lg-3"><img src="img/corgi_car.jpg" class="img-responsive"></div>
 
+        <div class="video" >
+          <iframe width="1000" height="750" src="https://www.youtube.com/embed/UR_yCO7-aIU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
       </div> <!-- /row -->
-    </dir> <!-- /container-fluid work -->
-    
-    
+    </div> <!-- /container-fluid work -->
 
-    <dir class="container-fluid" id="contact">
-      <div class="header">
-        <h1>Steven Liu</h1>
-        <h2>Software Embedded/Systems Engineer</h2>
-      </div> <!-- /header -->
 
-      <div class="contact-content">
-        <div class="placeholder">
-          <p>----------------------------------------------</p>
-        </div> <!-- /placeholder -->
-        <div class="ipsum">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
-          </p>
-        </div> <!-- /ipsum -->
+
+    <div class="container-fluid" id="contact">
+      <div class="contact-content col-lg-4 col-md-4">
+        <div class="header">
+          <h1>Contact</h1>
+        </div> <!-- /header -->
 
         <div class="email">
           <span class="glyphicon glyphicon-envelope">
             <a href="mailto:ikuangsl@gmail.com">ikuangsl@gmail.com</a>
           </span>
         </div> <!-- /email -->
+
+        <div class="email">
+          <span class="glyphicon glyphicon-phone">
+            <a>1-818096919</a>
+          </span>
+        </div> <!-- /phone -->
 
         <div class="profiles">
           <h2>
@@ -216,17 +230,43 @@
           </h2>
         </div> <!-- /profiles -->
 
-        <div class="placeholder">
-          <p>----------------------------------------------</p>
-        </div> <!-- /placeholder -->
+        <div class="more">
+          <p>Contact me if you want to know more about me!</p>
+        </div> <!-- /more -->
       </div> <!-- /contact-content -->
 
-      <div class="more">
-        <p>Contact me if you want to know more about me!</p>
-      </div> <!-- /more -->
-    </dir> <!-- /container-fluid contact -->
+      <div class="contact-form col-lg-7 col-md-7">
+        <div class="header">
+          <h1>Tell me something...</h1>
+        </div> <!-- /header -->
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="name-box form-control" placeholder="Enter your name" id="name" title="Name" maxlength=40>
+          </div> <!-- /form-group -->
+          
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" class="mail-box form-control" placeholder="Enter your email" id="email" required=”required” title="Email" maxlength=25>
+          </div> <!-- /form-group -->
+
+          <div class="form-group">
+            <label for="number">Phone Number</label>
+            <input type="text" class="number-box form-control" placeholder="Enter your number (optional)" id="number" title="number" maxlength=13 minlength=10>
+          </div> <!-- /form-group -->
+
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea style="resize:none" cols="40" rows="3" placeholder="Write your message here..." class="message-box form-control" id="message" required=”required” title="Message" minlength=10 maxlength=500></textarea>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-default">Submit</button>
+
+        </form>
+      </div>
+    </div> <!-- /container-fluid contact -->
     
-    <dir class="container-fluid container-faq" id="faq" >
+    <div class="container-fluid container-faq" id="faq" >
       <div class="header">
         <h1>FAQs</h1>
         <div class="panel-group" id="accordion">
@@ -282,8 +322,30 @@
           </div> <!-- /panel panel-default -->
         </div> <!-- /panel-group -->
       </div> <!-- /header -->
-    </dir> <!-- /container-fluid faq -->
+    </div> <!-- /container-fluid faq -->
 
+    <footer class="container">
+
+      <div class="footer-bottom clear">
+        <nav class="nav-footer desktop-only">
+          <a href="index.html" class="footer-nav-item" title="Home">Home</a>
+          <a href="#about" class="footer-nav-item" title="About">About</a>
+          <a href="#work" class="footer-nav-item" title="Work">Work</a>
+          <a href="#contact" class="footer-nav-item" title="Contact">Contact</a>
+          <a href="#faq" class="footer-nav-item last" title="FAQ">FAQ</a>
+          <a href="index.html" class="footer-nav-item last" title="Back-Top">Back to Top</a>
+        </nav>
+
+        <div class="footer-copyright">&copy; Steven Liu, Inc 2017</div>
+      </div><!-- /.footer-bottom -->
+
+      <div class="footer-social">
+          <br><br>
+          <a href="https://twitter.com/twitter" class="twitter-follow-button footer-social-link" data-show-count="false">Follow @twitter</a>
+          <div class="fb-like" data-href="https://www.facebook.com/DisneylandPassholders/" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </div>
+
+    </footer>
 
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
