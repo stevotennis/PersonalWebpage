@@ -124,18 +124,18 @@
       <div class="row">
         <div class="col-md-4 col-xs-12">
           <h2>Portfolio Concept</h2>
-          <p>Past Project: Siete. MemeMaster.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>Past Project: <a href="http://siete2.herokuapp.com/" title="Go to Siete" id="siete">Siete</a>. MemeMaster.</p>
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button></p>
         </div><!-- /col -->
         <div class="col-md-4">
           <h2>Project Goals</h2>
           <p>Two goals that comes to mind: (1) Make my own portfolio page; (2) Make a web application that makes applying for jobs easier. Eventually to make a google chrome extension to allow flexibility on different pages when job browsing. All of these goals are to help me land a job as a software engineer in a company that does what I love. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button></p>
        </div><!-- /col -->
         <div class="col-md-4">
           <h2>Course Goals</h2>
           <p>The end and forever ongoing goal is to contribute to the community using technology. I am constantly thinking about everything I learned and have picked up along the way and how I can use them to help others. Eventually, I want people to be more understanding of each other so they can be kinder to each other. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button></p>
         </div><!-- /col -->
       </div><!-- /row -->
 
@@ -377,6 +377,16 @@
     <!-- Bootstrap core JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
+    <script>
+      $(function () {
+        $('#siete').tooltip();
+      });
+    </script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
     <script src="js/jquery.stellar.min.js"></script>
     <script>
       $.stellar();
