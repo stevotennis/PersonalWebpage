@@ -17,9 +17,6 @@
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -30,15 +27,6 @@
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=943291639025025";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <!--navbar starts here-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -144,14 +132,14 @@
 
     </div> <!-- /container -->
 
-    <div class="container-fluid anchor" id="about" data-stellar-background-ratio="0.5">
+    <div class="container-fluid anchor parallax" id="about" data-stellar-background-ratio="0.5">
       <div class="header">
         <h1>About Me</h1>
       </div> <!-- /header -->
 
       <div class="row">
         <div class="image-about col-md-3 col-xs-1 col-sm-6 col-lg-3">
-          <img class="prof_pic img-responsive" src="img/fb_prof.jpg" alt="Facebook">
+          <img class="prof-pic img-responsive" src="img/fb_prof.jpg" alt="Facebook">
         </div> <!-- /image -->
 
         <div class="intro col-md-3 col-xs-12 col-sm-6 col-lg-3">
@@ -201,7 +189,7 @@
 
 
 
-    <div class="container-fluid" id="contact">
+    <div class="container-fluid parallax" id="contact">
       <div class="contact-content col-lg-4 col-md-4">
         <div class="header">
           <h1>Contact</h1>
@@ -258,9 +246,10 @@
           <div class="form-group">
             <label for="message">Message*</label>
             <textarea style="resize:none" cols="40" rows="3" placeholder="Write your message here..." class="message-box form-control" id="message" required=”required” title="Message" minlength=10 maxlength=500></textarea>
+            <p id="visible-comment"></p>
           </div>
           <br>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" class="btn btn-default" id="button">Submit</button>
 
         </form>
       </div>
@@ -374,38 +363,13 @@
     <!-- All your JavaScript comes now -->
     <!-- ============================= -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Bootstrap core JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <!-- Can place script tags with JavaScript files here -->
-    <script>
-      $(function () {
-        $('#siete').tooltip();
-      });
-    </script>
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
     <script src="js/jquery.stellar.min.js"></script>
-    <script>
-      $.stellar();
-      $("#about").stellar();
-    </script>
-    <script type="text/javascript">
-      var $root = $('html, body');
-      $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        if(href != undefined) {
-          $root.animate({
-            scrollTop: $(href).offset().top
-          }, 500, function () {
-            window.location.hash = href;
-          });
-        }
-          return false;
-      });
-    </script>
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>

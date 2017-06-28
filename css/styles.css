@@ -1,4 +1,4 @@
-/**** index page ****/
+/**** Index page ****/
 .jumbotron {
 	background-image:  url("../img/mount.jpg");
 	background-size: cover;
@@ -21,8 +21,14 @@
   margin-right: -15px;
 }
 
-body {
-	/*position: relative;*/
+.parallax {
+	background-attachment: fixed;
+	/*Give the background a fixed position does it not scroll when you scroll*/
+	background-size: cover;
+	/*Have the background cover the entire div section*/
+	color: white;
+	/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+	padding: 100px;
 }
 
 /**** About page ****/
@@ -43,20 +49,10 @@ body {
 	width: 33%;
 }
 
-.anchor {
-  /*padding-top: 10em;*/
-}
-
 #about{
 	background-image: url("../img/msh3.png");
 	/*Add a background image*/
-	background-attachment: fixed;
-	/*Give the background a fixed position does it not scroll when you scroll*/
-	background-size: cover;
-	/*Have the background cover the entire div section*/
-	color: white;
-	/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
-	padding:100px;
+	padding: 100px;
 	padding-top: 50px;
 	padding-bottom: 10em;
 	border-bottom: 1em;
@@ -72,26 +68,12 @@ body {
 	color: #344495;
 }
 
-.header h1 {
-	/*text-align: center;*/
-	/*padding: 1.5em 0 0 0;*/
-}
-
 .contact-content {
 	width: 600px;  
   max-width: 90%;
-  /*margin: auto;*/
-}
-
-.contact-content p {
-	/*padding: 0 1.5em;*/
-	/*text-align: center;*/
-	/*position: relative;*/
 }
 
 .profiles {
-	/*padding: 0 1.5em;*/
-	/*text-align: center;*/
 	position: relative;
 }
 
@@ -107,15 +89,8 @@ body {
 #contact{
 	background-image: url("../img/upsplash.png");
 	/*Add a background image*/
-	background-attachment: fixed;
-	/*Give the background a fixed position does it not scroll when you scroll*/
-	background-size: cover;
-	/*Have the background cover the entire div section*/
-	color: white;
-	/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
-	padding:100px;
+	padding: 100px;
 	padding-top: 50px;
-	/*height: 50em;*/
 }
 
 .glyphicon a:hover{
@@ -142,7 +117,6 @@ body {
 .container-faq .header h1 {
 	text-align: center;
 	padding: 1em 0 0 0;
-	
 }
 
 .panel-title a:hover{
@@ -197,7 +171,6 @@ footer a:visited {
 
 footer.container {
   margin-top: 5px;
-  /*background-color: red;*/
 }
 
 footer.container {
@@ -213,8 +186,8 @@ footer.container .nav-footer{
 }
 
 footer.container .nav-footer a{
-	display:inline-block;
-	margin:0 5px
+	display: inline-block;
+	margin:0 5px;
 }
 
 footer.container .nav-footer a:first-child{
@@ -227,8 +200,8 @@ footer.container .footer-copyright{
 
 footer.container .footer-social{
 	float:right;
-	margin:0 5px
-	display:inline-block;
+	margin:0 5px;
+	display: inline-block;
 }
 
 /* Typography */
@@ -293,7 +266,6 @@ p {
 
 .email {
 	text-transform: uppercase;
-	/*font-family: Futura, Helvetica, Arial, sans-serif;*/
 }
 
 .more p {
@@ -302,9 +274,12 @@ p {
 }
 
 /**** FAQ page ****/
+/**** None ****/
 
 /**** Work page ****/
-/* ABOUT */
+/**** None ****/
+
+/**** About page ****/
 .main-text {
 	clear: both;
 	padding-top: 2em;
@@ -321,7 +296,7 @@ p {
 	box-sizing: border-box;
 }
 
-.prof_pic {
+.prof-pic {
 	width: 80%;
 }
 
