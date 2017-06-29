@@ -3,6 +3,7 @@
 
 // Facebook icon
 (function(d, s, id) {
+
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
@@ -12,15 +13,17 @@
 
 $(document).ready(function(){
 	// Redden the message-box
-	$(".message-box").css("border", "2px solid red");
+	// $(".message-box").css("border", "2px solid red");
 
 	// Tool tip
 	$(function () {
+
 		$('#siete').tooltip();
 	});
 
 	// Tool tip
 	$(function () {
+
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 
@@ -33,9 +36,12 @@ $(document).ready(function(){
 	$('.navbar-nav a').click(function() {
 		var href = $.attr(this, 'href');
 		if(href != undefined) {
+
 			$root.animate({
+
 				scrollTop: $(href).offset().top
 			}, 500, function () {
+
 				window.location.hash = href;
       });
     }
@@ -45,10 +51,36 @@ $(document).ready(function(){
 	// button
 	$("#button").on('click', function (){
 		var comment = $('.message-box').val();
-		$('#visible-comment').html(comment);
-		$('.message-box').hide();
+		if(comment === ""){
 
-		alert("We got your message!");
+			$(".message-box").css("border", "2px solid red");
+		} else {
+			
+			$('#visible-comment').html(comment);
+			$('.message-box').hide();
+
+			alert("We got your message!");
+		}
 		return false;
 	});
+
+	// message-box display number of characters typed
+	$(".message-box").on("keyup", function(){
+
+		console.log("keyup happened");
+
+		var charCount = $(".message-box").val().length;
+		console.log(charCount);
+
+		$("#char-count").html(charCount);
+
+		if(charCount > 50){
+
+			$("#char-count").css("color", "red");
+		} else{
+
+			$("#char-count").css("color", "black");
+		};
+	})
+
 })
