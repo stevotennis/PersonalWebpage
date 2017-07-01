@@ -83,4 +83,28 @@ $(document).ready(function(){
 		};
 	})
 
+	// work section
+	for(var i = 0; i < works.length; ++i){
+		$("#work").append("\
+			<div class='col-md-3 col-xs-12 col-sm-6 col-lg-3'>\
+				<img src=" + works[i] + " class='img-responsive'>\
+			</div>\
+		");
+
+		var images = $("#work img");
+
+		if(i%2 === 0){
+			$(images[i]).css("border", "2px solid DodgerBlue");
+		} else {
+			$(images[i]).css("border", "2px solid salmon");
+		}
+
+		if(i=== (works.length - 1)){
+			$("#work").append("\
+				<div class='video' >\
+          <iframe width='1000' height='750' src='https://www.youtube.com/embed/UR_yCO7-aIU' frameborder='0' allowfullscreen></iframe>\
+        </div>"
+      );
+		}
+	}
 })
