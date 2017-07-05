@@ -87,7 +87,11 @@ $(document).ready(function(){
 	for(var i = 0; i < works.length; ++i){
 		$("#work").append("\
 			<div class='col-md-3 col-xs-12 col-sm-6 col-lg-3'>\
-				<img src=" + works[i] + " class='img-responsive'>\
+				<a href='" + works[i].url + "' class='work-img'>\
+					<img src='" + works[i].pic + "' class='img-responsive'>\
+					<span class='info'><p class='proj-title'>Title:</p>" + works[i].title + " \
+				</span>\
+				</a>\
 			</div>\
 		");
 
@@ -99,7 +103,7 @@ $(document).ready(function(){
 			$(images[i]).css("border", "2px solid salmon");
 		}
 
-		if(i=== (works.length - 1)){
+		if(i === (works.length - 1)){
 			$("#work").append("\
 				<div class='video' >\
           <iframe width='1000' height='750' src='https://www.youtube.com/embed/UR_yCO7-aIU' frameborder='0' allowfullscreen></iframe>\
@@ -107,4 +111,10 @@ $(document).ready(function(){
       );
 		}
 	}
+
+	$(".work-img").mouseenter( function() {
+		$(".info", this).show();
+	}).mouseleave(function(){
+  		$(".info", this).hide();
+	});
 })

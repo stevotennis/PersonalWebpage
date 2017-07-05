@@ -1,11 +1,11 @@
 /**** Index page ****/
 .jumbotron {
-	background-image:  url("../img/mount.jpg");
-	background-size: cover;
+    background-image:  url("../img/mount.jpg");
+    background-size: cover;
 }
 
 .jumbotron p {
-	color: white;
+    color: white;
 }
 
 .jumbotron a {
@@ -13,7 +13,7 @@
 }
 
 #carousel-example-generic {
-	padding-top: 2em;
+    padding-top: 2em;
 }
 
 .carousel {
@@ -22,142 +22,143 @@
 }
 
 .parallax {
-	background-attachment: fixed;
-	/*Give the background a fixed position does it not scroll when you scroll*/
-	background-size: cover;
-	/*Have the background cover the entire div section*/
-	color: white;
-	/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
-	padding: 100px;
+    background-attachment: fixed;
+    /*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+    /*Have the background cover the entire div section*/
+    color: white;
+    /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding: 100px;
 }
 
 /**** About page ****/
 .image-about {
-	display: inline-block;
-	float: left;
-	position: relative;
-	width: 33%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 33%;
 }
 
 .intro {
-	position: relative;
-	width: 33%;
+    position: relative;
+    width: 33%;
 }
 
 .skill {
-	position: relative;
-	width: 33%;
+    position: relative;
+    width: 33%;
 }
 
 #about{
-	background-image: url("../img/msh3.png");
-	/*Add a background image*/
-	padding: 100px;
-	padding-top: 50px;
-	padding-bottom: 10em;
-	border-bottom: 1em;
-	height: 75em;
+    background-image: url("../img/msh3.png");
+    /*Add a background image*/
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 10em;
+    border-bottom: 1em;
+    height: 75em;
 }
 
 /**** Contact page ****/
 .container-contact {
-	width: 80%;
-	height: 80%;
-	margin: 0 auto auto auto;
-	background-color: #fffeea;
-	color: #344495;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto auto auto;
+    background-color: #fffeea;
+    color: #344495;
 }
 
 .contact-content {
-	width: 600px;  
+    width: 600px;  
   max-width: 90%;
 }
 
 .profiles {
-	position: relative;
+    position: relative;
 }
 
 .email {
-	font-size: 30px
+    font-size: 30px
 }
 
 .more {
-	padding-bottom: 0.5em;
-	position: relative;
+    padding-bottom: 0.5em;
+    position: relative;
 }
 
 #contact{
-	background-image: url("../img/upsplash.png");
-	/*Add a background image*/
-	padding: 100px;
-	padding-top: 50px;
+    background-image: url("../img/upsplash.png");
+    /*Add a background image*/
+    padding: 100px;
+    padding-top: 50px;
 }
 
 .glyphicon a:hover{
-	color: red;
-	transition: color 600ms;
-	text-decoration: none;
+    color: red;
+    transition: color 600ms;
+    text-decoration: none;
 }
 
 .links {
-	padding-right: 1em;
+    padding-right: 1em;
 }
 
 .form-control {
-	width: 80%;
+    width: 80%;
 }
 
 /**** FAQ page ****/
 .container-faq {
-	width: 95%;
-	margin: 0 auto 3em auto;
-	color: #344495;
+    width: 95%;
+    margin: 0 auto 3em auto;
+    color: #344495;
 }
 
 .container-faq .header h1 {
-	text-align: center;
-	padding: 1em 0 0 0;
+    text-align: center;
+    padding: 1em 0 0 0;
 }
 
 .panel-title a:hover{
-	color: blue;
-	transition: color 600ms;
-	text-decoration: none;
+    color: blue;
+    transition: color 600ms;
+    text-decoration: none;
 }
 
 .learn-more {
-	text-align: left;
-	float: left;
+    text-align: left;
+    float: left;
 }
 
 .modal-button {
-	float: right;
-	padding: 15px;
+    float: right;
+    padding: 15px;
 }
 
 #faq .header .row {
-	margin-left: 0px;
+    margin-left: 0px;
 }
 
 #modalembed {
-	height: 500px;
-	width: 100%;
-	padding: 10px;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
 }
 
 /**** Work page ****/
 #work {
-	padding-top: 50px;
+    padding-top: 50px;
 }
 
 .row-space {
-	-webkit-column-gap: 1em;
+    -webkit-column-gap: 1em;
 }
 
 .video iframe{
-	padding: 2em 0 2em 0;
-	display: block;
-  margin: 0 auto;
+    padding: 2em 0 2em 0;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
 }
 
 /*** Miscellaneous ***/
@@ -182,26 +183,51 @@ footer.container {
 }
 
 footer.container .nav-footer{
-	float: left;
+  float: left;
 }
 
 footer.container .nav-footer a{
-	display: inline-block;
-	margin:0 5px;
+  display: inline-block;
+  margin:0 5px;
 }
 
 footer.container .nav-footer a:first-child{
-	margin-left:0;
+  margin-left:0;
 }
 
 footer.container .footer-copyright{
-	float:right;
-}}
+  float:right;
+}
 
 footer.container .footer-social{
-	float:right;
-	margin:0 5px;
-	display: inline-block;
+  float:right;
+  margin:0 5px;
+  display: inline-block;
+}
+
+.work-img {
+  display: block; /* needed to center the element with margin */
+  margin: auto; /* center the image inside the column if it's smaller */
+  max-width: 300px; /* needs to be set to the width of your image files if they are relatively small */
+  /*max-height: 300px;*/
+  position: relative; /* is needed for .info position: absolute to work */
+  width: 440px;
+  height: 330px;
+}
+.info {
+  position: absolute; /* let's us move the text around and not worry about the image */
+  top: 15%; /* position the text 15% away from the top */
+  left: 22%;
+  color: blue;
+  font-family:Futura;
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:0.5em;
+  line-height:1.6;
+  display: none;
+}
+.proj-title {
+    font-weight:100;
 }
 
 /* Typography */
@@ -216,61 +242,61 @@ footer.container .footer-social{
 /**** About page ****/
 #about p {
   font-family: 'Slabo 27px', serif;
-	font-size: 1.75em;
-	font-weight: 100;
-	-webkit-margin-before: 0;
+    font-size: 1.75em;
+    font-weight: 100;
+    -webkit-margin-before: 0;
 }
 
 .skill h3 {
-	text-align: center;
-	text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #skill-list {
-	margin-left: 2em;
-	font-size: 1.75em;
-	font-family: 'Slabo 27px', serif;
-	font-weight: 100;
-	-webkit-margin-before: 0;
+    margin-left: 2em;
+    font-size: 1.75em;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 100;
+    -webkit-margin-before: 0;
 }
 
 #about h2{
-	text-transform: uppercase;
-	text-align: center;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /**** Contact page ****/
 h1,
 h2,
 h3 {
-	font-family: 'Slabo 27px', serif;
+    font-family: 'Slabo 27px', serif;
 }
 
 p {
-	font-family: Futura, Helvetica, Arial, sans-serif;
-	font-weight: 200;
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    font-weight: 200;
 }
 
 #contact a {
-	color: white;
+    color: white;
 }
 
 .header h1{
-	font-size: 3em;
+    font-size: 3em;
 }
 
 .header h2 {
-	font-size: 2em;
-	font-weight: 500;
+    font-size: 2em;
+    font-weight: 500;
 }
 
 .email {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .more p {
-	font-weight: 400;
-	font-size: 1.5em;
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 /**** FAQ page ****/
@@ -281,25 +307,25 @@ p {
 
 /**** About page ****/
 .main-text {
-	clear: both;
-	padding-top: 2em;
-	padding: top right bottom left;
+    clear: both;
+    padding-top: 2em;
+    padding: top right bottom left;
 }
 
 .intro {
-	padding: 0 0.75em;
-	box-sizing: border-box;
+    padding: 0 0.75em;
+    box-sizing: border-box;
 }
 
 .skill {
-	padding: 0 0.5em;
-	box-sizing: border-box;
+    padding: 0 0.5em;
+    box-sizing: border-box;
 }
 
 .prof-pic {
-	width: 80%;
+    width: 80%;
 }
 
 h3 p {
-	display: inline-block;
+    display: inline-block;
 }
