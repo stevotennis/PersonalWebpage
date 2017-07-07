@@ -11,6 +11,15 @@
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+// google map
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 32.8214183, lng: -117.1309617},
+    zoom: 14
+  });
+}
+
 $(document).ready(function(){
 	// Redden the message-box
 	// $(".message-box").css("border", "2px solid red");
@@ -117,4 +126,6 @@ $(document).ready(function(){
 	}).mouseleave(function(){
   		$(".info", this).hide();
 	});
+
+	// contact section
 })

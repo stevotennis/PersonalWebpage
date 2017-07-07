@@ -145,6 +145,21 @@
     padding: 10px;
 }
 
+.google-map {
+  width: 33em;
+}
+
+#map {
+  height: 450px;
+  width: 90%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /**** Work page ****/
 #work {
     padding-top: 50px;
