@@ -14,9 +14,17 @@
 // google map
 var map;
 function initMap() {
+
+	var myLatLng = {lat: 32.8214183, lng: -117.1309617};
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 32.8214183, lng: -117.1309617},
+    center: myLatLng,
     zoom: 14
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Cubic Corporation'
   });
 }
 
